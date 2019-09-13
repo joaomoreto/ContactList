@@ -1,0 +1,53 @@
+<ion-content class="ion-padding">
+  <ion-col sizeMd="6" sizeXs="12">
+    <ion-card>
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col sizeMd="6" sizeXs="12">
+            <form [formGroup]="form">
+              <ion-list>
+                <ion-item>
+                  <ion-label position="floating">Name</ion-label>
+                  <ion-input clearInput type="text" formControlName="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input clearInput type="email" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">CPF</ion-label>
+                  <ion-input mask="###.###.###-##" clearInput type="text" minLength="14" maxLength="14"
+                    formControlName="document">
+                  </ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Phone Number</ion-label>
+                  <ion-input clearInput type="tel" minLength="10" maxLength="11" formControlName="phone"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Full Address</ion-label>
+                  <ion-input clearInput type="text" formControlName="address"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Image</ion-label>
+                  <ion-input clearInput type="text" formControlName="image"></ion-input>
+                </ion-item>
+              </ion-list>
+            </form>
+            <p>
+              <ion-button color="primary" *ngIf="contact.name" size="large" fill="outline" expand="full" shape="round"
+                [disabled]="form.invalid" (click)="update()">Update
+              </ion-button>
+              <ion-button color="primary" *ngIf="!contact.name" size="large" fill="outline" expand="full" shape="round"
+                [disabled]="form.invalid" (click)="add()">Add
+              </ion-button>
+              <ion-button (click)="return()" color="medium" fill="clear" size="small" expand="full">
+                Return
+              </ion-button>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-col>
+</ion-content>

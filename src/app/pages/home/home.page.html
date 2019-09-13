@@ -1,0 +1,27 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button color="primary" (click)="newContact()">
+      New Contact
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="end">
+    <ion-button color="primary" (click)="toggleMode()">
+      <ion-icon slot="start" name="list" *ngIf="!listMode"></ion-icon>
+      <ion-icon slot="start" name="apps" *ngIf="listMode"></ion-icon>
+      View Mode
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content>
+  <app-home-card [contacts]="contacts" *ngIf="!listMode"></app-home-card>
+  <app-home-list [contacts]="contacts" *ngIf="listMode"></app-home-list>
+
+  <div class="ion-padding custom-skeleton" *ngIf="!contacts">
+    <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+    <ion-skeleton-text animated></ion-skeleton-text>
+    <ion-skeleton-text animated style="width: 88%"></ion-skeleton-text>
+    <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+    <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+  </div>
+</ion-content>

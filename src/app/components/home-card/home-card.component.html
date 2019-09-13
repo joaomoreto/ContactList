@@ -1,0 +1,44 @@
+<ion-grid>
+  <ion-row>
+    <ion-col sizeMd="4" sizeXs="12" *ngFor="let item of contacts">
+      <ion-card>
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="{{ item.image }}">
+            </ion-avatar>
+            <ion-card-title>{{ item.name }}</ion-card-title>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-icon name="mail" slot="start"></ion-icon>
+          <ion-label>&nbsp; {{ item.email }}</ion-label>
+          <br>
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>&nbsp; {{ item.fullAddress }}</ion-label>
+          <br>
+          <ion-icon name="call" slot="start"></ion-icon>
+          <ion-label>&nbsp; {{ item.phone }}</ion-label>
+          <br>
+          <ion-icon name="document" slot="start"></ion-icon>
+          <ion-label>&nbsp; {{ item.documentNumber }}</ion-label>
+          <hr>
+          <ion-card-content>
+            <ion-button (click)="select(item)">
+              <ion-icon slot="icon-only" ios="ios-create" md="md-create"></ion-icon>
+            </ion-button>
+            <ion-button (click)="presentAlertConfirm(item)" color="danger">
+              <ion-icon slot="icon-only" ios="ios-trash" md="md-trash"></ion-icon>
+            </ion-button>
+            <ion-fab vertical="bottom" horizontal="end" slot="end">
+              <ion-fab-button color="success">
+                <ion-icon name="call"></ion-icon>
+              </ion-fab-button>
+            </ion-fab>
+          </ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

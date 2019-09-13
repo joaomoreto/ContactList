@@ -1,0 +1,48 @@
+<ion-list>
+  <ion-item>
+    <ion-label>
+      <ion-icon ios="ios-contacts" md="md-contacts"></ion-icon>
+      &nbsp; Name
+    </ion-label>
+    <ion-label>
+      <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+      &nbsp; E-mail
+    </ion-label>
+    <ion-label>
+      <ion-icon ios="ios-document" md="md-document"></ion-icon>
+      &nbsp; CPF
+    </ion-label>
+    <ion-label>
+      <ion-icon ios="ios-call" md="md-call"></ion-icon>
+      &nbsp; Phone
+    </ion-label>
+  </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item *ngFor="let item of contacts">
+    <ion-avatar slot="start">
+      <img src="{{ item.image }}">
+    </ion-avatar>
+    <ion-label>
+      {{ item.name }} <br>
+      <small>
+        {{ item.fullAddress }}
+      </small>
+    </ion-label>
+    <ion-label>
+      {{ item.email }}
+    </ion-label>
+    <ion-label>
+      {{ item.documentNumber }}
+    </ion-label>
+    <ion-label>
+      {{ item.phone }}
+    </ion-label>
+    <ion-button (click)="select(item)">
+      <ion-icon slot="icon-only" ios="ios-create" md="md-create"></ion-icon>
+    </ion-button>
+    <ion-button (click)="presentAlertConfirm(item)" color="danger">
+      <ion-icon slot="icon-only" ios="ios-trash" md="md-trash"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-list>
