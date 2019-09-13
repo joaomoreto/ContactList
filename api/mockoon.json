@@ -1,0 +1,359 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "7939464c6756465edd3f8136141dcfad",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "318adb60-cf39-11e9-80d5-43d58b4bb1d8",
+            "name": "five",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "address/13400000",
+                    "body": "{\n    \"street\": \"Rua do Bruno Pereira\",\n    \"number\": \"123\",\n    \"neighborhood\": \"Centro\",\n    \"city\": \"Aqa\",\n    \"state\": \"SP\",\n    \"country\": \"BRA\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "1b95e4e0-cffb-11e9-adb3-a1b2ac855733",
+                    "documentation": "customers",
+                    "method": "post",
+                    "endpoint": "customers",
+                    "body": "{\n    \"message\":\"Cliente cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"945bfada-f4ff-4935-81fa-15ffd587ea82\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "69d24680-cffb-11e9-adb3-a1b2ac855733",
+                    "documentation": "customers",
+                    "method": "put",
+                    "endpoint": "customers/945bfada-f4ff-4935-81fa-15ffd587ea82",
+                    "body": "{\n    \"message\":\"Cliente alterado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"945bfada-f4ff-4935-81fa-15ffd587ea82\"\n    }\n}",
+                    "latency": 1200,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "7c96a860-cffb-11e9-adb3-a1b2ac855733",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "customers/945bfada-f4ff-4935-81fa-15ffd587ea82",
+                    "body": "{\n    \"message\":\"Cliente excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "45bc3de0-d001-11e9-adb3-a1b2ac855733",
+                    "documentation": "customers",
+                    "method": "get",
+                    "endpoint": "customers",
+                    "body": "[\n    {\n        \"id\": \"945bfada-f4ff-4935-81fa-15ffd587ea81\",\n        \"name\": \"Bruno Pereira\",\n        \"email\": \"bruno@5by5.com.br\"\n    },\n    {\n        \"id\": \"945bfada-f4ff-4935-81fa-15ffd587ea82\",\n        \"name\": \"Jose Pereira\",\n        \"email\": \"jose@5by5.com.br\"\n    },\n    {\n        \"id\": \"945bfada-f4ff-4935-81fa-15ffd587ea83\",\n        \"name\": \"Arnoldo Pereira\",\n        \"email\": \"arnoldo@5by5.com.br\"\n    }\n]",
+                    "latency": 2000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "01e9c420-d04c-11e9-afbd-8db9fadb63f1",
+                    "documentation": "products",
+                    "method": "get",
+                    "endpoint": "products",
+                    "body": "[\n    {\n        \"code\": \"12451\",\n        \"title\": \"Produto 1\",\n        \"price\": 100,\n        \"description\": \"Produto 1 - 1\",\n        \"quantity\": 1,\n        \"category\": \"Produto 1\"\n    },\n    {\n        \"code\": \"12452\",\n        \"title\": \"Produto 2\",\n        \"price\": 150,\n        \"description\": \"Produto 2 - 2\",\n        \"quantity\": 10,\n        \"category\": \"Produto 2\"\n    },\n    {\n        \"code\": \"12453\",\n        \"title\": \"Produto 3\",\n        \"price\": 200,\n        \"description\": \"Produto 3 - 3\",\n        \"quantity\": 100,\n        \"category\": \"Produto 3\"\n    },\n    {\n        \"code\": \"12454\",\n        \"title\": \"Produto 4\",\n        \"price\": 250,\n        \"description\": \"Produto 4 - 4\",\n        \"quantity\": 200,\n        \"category\": \"Produto 4\"\n    }\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "56089710-d052-11e9-afbd-8db9fadb63f1",
+                    "documentation": "products",
+                    "method": "post",
+                    "endpoint": "products",
+                    "body": "{\n    \"message\":\"Produto cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"code\": \"12451\"\n    }\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "7a889d60-d052-11e9-afbd-8db9fadb63f1",
+                    "documentation": "products",
+                    "method": "put",
+                    "endpoint": "products/12-451",
+                    "body": "{\n    \"message\":\"Produto alterado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"code\": \"12-451\"\n    }\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "885d6ab0-d052-11e9-afbd-8db9fadb63f1",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "products/12451",
+                    "body": "{\n    \"message\":\"Produto excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "5914f5d0-d0d8-11e9-9aef-c5887454c67d",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/authenticate",
+                    "body": "{\n    \"user\":\"joaomoreto\",\n    \"name\":\"Joao Moreto\",\n    \"image\":\"https://picsum.photos/200/300\",\n    \"email\":\"joao.moreto@5by5.com.br\",\n    \"roles\":[\"user\", \"manager\"],\n    \"token\":\"6c48eb94163f407e8cf516deebf147f11565c496c3df486da40b10e6e235c7e250608035e90c44379d9ca7f29d5e836288c70c7da4bd49a99866803da388e702\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "950f9e70-d31a-11e9-84b8-bf517eb5f163",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "products/12451",
+                    "body": "{\n        \"code\": \"12451\",\n        \"title\": \"Produto 1\",\n        \"price\": 100,\n        \"description\": \"Produto 1 - 1\",\n        \"quantity\": 1,\n        \"category\": \"Produto 1\"\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                }
+            ]
+        },
+        {
+            "uuid": "c4d88df0-d505-11e9-a80f-4bdb5c147173",
+            "name": "contactlist",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3001,
+            "routes": [
+                {
+                    "uuid": "",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/auth",
+                    "body": "{\n    \"user\":\"joaomoreto\",\n    \"name\":\"Joao Moreto\",\n    \"image\":\"https://picsum.photos/200/300\",\n    \"email\":\"joao.moreto@5by5.com.br\",\n    \"roles\":[\"user\", \"manager\"],\n    \"token\":\"6c48eb94163f407e8cf516deebf147f11565c496c3df486da40b10e6e235c7e250608035e90c44379d9ca7f29d5e836288c70c7da4bd49a99866803da388e702\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "0c524840-d580-11e9-be8a-55cee206c111",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contacts",
+                    "body": "[\n    {\n        \"id\": \"12451\",\n        \"name\": \"Jose Silva\",\n        \"email\": \"jose@teste.com\",\n        \"documentNumber\": \"245.578.988-99\",\n        \"phone\": \"(16)99773-3456\",\n        \"fullAddress\": \"Avenida Rodrigo Fernando Grillo, 300\",\n        \"image\": \"https://picsum.photos/200/300\"\n    },\n    {\n        \"id\": \"12452\",\n        \"name\": \"Maria Silva\",\n        \"email\": \"maria@teste.com\",\n        \"documentNumber\": \"123.456.789-05\",\n        \"phone\": \"(16)99773-6655\",\n        \"fullAddress\": \"Avenida Rodrigo Fernando Grillo, 301\",\n        \"image\": \"https://picsum.photos/200/300\"\n    },\n    {\n        \"id\": \"12453\",\n        \"name\": \"Joaquin Silva\",\n        \"email\": \"joaquin@teste.com\",\n        \"documentNumber\": \"794.561.237-68\",\n        \"phone\": \"(16)99773-9987\",\n        \"fullAddress\": \"Avenida Rodrigo Fernando Grillo, 302\",\n        \"image\": \"https://picsum.photos/200/300\"\n    },\n    {\n        \"id\": \"12454\",\n        \"name\": \"Joao Silva\",\n        \"email\": \"joao@teste.com\",\n        \"documentNumber\": \"789.457.825-65\",\n        \"phone\": \"(16)99773-0021\",\n        \"fullAddress\": \"Avenida Rodrigo Fernando Grillo, 303\",\n        \"image\": \"https://picsum.photos/200/300\"\n    },\n    {\n        \"id\": \"12455\",\n        \"name\": \"Josivaldo Silva\",\n        \"email\": \"josivaldo@teste.com\",\n        \"documentNumber\": \"556.587.888-32\",\n        \"phone\": \"(16)99773-6444\",\n        \"fullAddress\": \"Avenida Rodrigo Fernando Grillo, 304\",\n        \"image\": \"https://picsum.photos/200/300\"\n    }\n]",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "641f32a0-d5d4-11e9-bbff-bf7a65389b4f",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "account",
+                    "body": "{}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f0f13700-d63d-11e9-a711-7115620f294b",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contact",
+                    "body": "{}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f9d907d0-d63d-11e9-a711-7115620f294b",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "contact",
+                    "body": "{}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "ee135cb0-d643-11e9-a711-7115620f294b",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "contact",
+                    "body": "{}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        }
+    ]
+}
